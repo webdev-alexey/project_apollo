@@ -1,0 +1,146 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  font-size: 16px;
+  font-family: "Noto Sans";
+}
+.block {
+  background: orange;
+  padding: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.nav {
+  background-color: #555;
+}
+.slider {
+  background-color: blue;
+}
+.line {
+  border-top: 1px solid #eaeff5;
+}
+.footer {
+  background-color: #252525;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.logo {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.logo__title {
+  font-size: 33px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .logo__title {
+    font-size: 38px;
+    letter-spacing: 7px;
+  }
+}
+.logo__subtitle {
+  font-size: 14px;
+  line-height: 1;
+  color: #a1bbd9;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .logo__subtitle {
+    font-size: 16px;
+    letter-spacing: 9px;
+  }
+}
