@@ -83,6 +83,23 @@ body {
   font-size: 16px;
   font-family: "Noto Sans";
 }
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 67px;
+}
 .block {
   background: orange;
   padding: 20px;
@@ -378,4 +395,60 @@ body {
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
+}
+.benefit-block {
+  padding-bottom: 38px;
+}
+.benefit-block:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 762px) {
+  .benefit-block:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+  .benefit-block:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .benefit-block {
+    margin-bottom: 24px;
+  }
+}
+.benefit-block__img {
+  height: 130px;
+  margin-bottom: 18px;
+  display: table;
+  width: 100%;
+}
+.benefit-block__img div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.benefit-block__img img {
+  display: inline-block;
+}
+@media (min-width: 1200px) {
+  .benefit-block__img {
+    margin-bottom: 24px;
+  }
+}
+.benefit-block__header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benefit-block__header {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.benefit-block__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
 }
