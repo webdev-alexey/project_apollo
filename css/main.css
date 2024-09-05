@@ -83,23 +83,6 @@ body {
   font-size: 16px;
   font-family: "Noto Sans";
 }
-.heading {
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-@media (min-width: 1200px) {
-  .heading {
-    font-size: 38px;
-    margin-bottom: 30px;
-  }
-}
-.section {
-  padding-top: 60px;
-  padding-bottom: 67px;
-}
 .block {
   background: orange;
   padding: 20px;
@@ -122,6 +105,69 @@ body {
 /* Small Devices, Tablets - adaptive styles bofore 768px */
 /* Extra Small Devices, Phones - adaptive styles bofore 480px */
 /* Custom, iPhone Retina - adaptive styles bofore 320px */
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+}
+.heading--smaller-margin {
+  margin-bottom: 20px;
+}
+.heading--number:before {
+  height: 26px;
+  width: 26px;
+  display: block;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  padding-top: 3px;
+  padding-left: 9px;
+  background-color: #ffc80a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  content: "0";
+  position: absolute;
+  left: -13px;
+  top: -40px;
+}
+@media (min-width: 1200px) {
+  .heading--number:before {
+    left: -32px;
+    top: -30px;
+  }
+}
+.heading--number-1:before {
+  content: "1";
+}
+.heading--number-2:before {
+  content: "2";
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 67px;
+  }
+}
+.section--p-t-70 {
+  padding-top: 70px;
+}
+@media (min-width: 992px) {
+  .section--m-p-b-0 {
+    padding-bottom: 0;
+  }
+}
 .logo {
   text-align: center;
   padding-top: 30px;
@@ -451,4 +497,29 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #777;
+}
+.service-description__img--xs-m-b-20 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .service-description__img--xs-m-b-20 {
+    margin-bottom: 0;
+  }
+}
+.service-description__content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.service-description__content p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.service-description__button-arrow {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/icons/arrow-orange.png");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
