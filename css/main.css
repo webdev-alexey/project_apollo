@@ -83,6 +83,18 @@ body {
   font-size: 16px;
   font-family: "Noto Sans";
 }
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.subtitle_text {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+  margin-top: 0;
+}
 .block {
   background: orange;
   padding: 20px;
@@ -167,6 +179,109 @@ body {
   .section--m-p-b-0 {
     padding-bottom: 0;
   }
+}
+.package {
+  text-align: center;
+  color: #242526;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+  padding-top: 34px;
+  padding-bottom: 47px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+}
+.package.last {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .package {
+    margin-bottom: 0;
+  }
+}
+.package__type {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.package__price {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.package__price:after {
+  content: "c";
+  font-family: "als_rublregular";
+}
+.package__period {
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+.package__benefits {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.package__benefits ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.package__benefits ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.package__benefits ul li:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icons/ok-icon.png");
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.button {
+  background-color: #252525;
+  box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 0.5);
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 44px;
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #ffc80a;
+  text-decoration: none;
+  color: #fff;
+}
+.button--orange {
+  background-color: #ffc80a;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.button--orange:hover,
+.button--orange:active,
+.button--orange:focus {
+  background-color: #252525;
+  text-decoration: none;
+  color: #fff;
 }
 .logo {
   text-align: center;
