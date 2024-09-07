@@ -108,9 +108,6 @@ p {
 .line {
   border-top: 1px solid #eaeff5;
 }
-.footer {
-  background-color: #252525;
-}
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens - adaptive styles bofore 1200px */
 /* Medium Devices, Desktops - adaptive styles bofore 992px */
@@ -637,4 +634,39 @@ p {
   background-image: url("../img/icons/arrow-orange.png");
   background-repeat: no-repeat;
   background-position: left top;
+}
+.footer {
+  background-color: #252525;
+  color: #6c6c6c;
+}
+.footer p {
+  color: #6c6c6c;
+}
+.footer__title {
+  color: #f7f8f9;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 57px;
+}
+.footer__nav li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.footer__nav a {
+  color: #6c6c6c;
+  text-decoration: none;
+}
+.footer__nav a:hover {
+  color: #ffc80a;
+  text-decoration: none;
 }
